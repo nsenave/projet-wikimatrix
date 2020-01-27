@@ -9,8 +9,6 @@ import java.io.FileReader;
 import org.junit.Test;
 
 public class BenchTest {
-	// String urlTest = "Comparison_of_Canon_EOS_digital_cameras":
-	
 	/*
 	*  the challenge is to extract as many relevant tables as possible
 	*  and save them into CSV files  
