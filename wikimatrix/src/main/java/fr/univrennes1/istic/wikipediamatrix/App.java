@@ -1,4 +1,7 @@
 package fr.univrennes1.istic.wikipediamatrix;
+import java.io.IOException;
+
+import fr.univrennes1.istic.wikipediamatrix.Parser1;
 
 /**
  * Hello world!
@@ -6,8 +9,13 @@ package fr.univrennes1.istic.wikipediamatrix;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
         System.out.println( "Hello World!" );
+        
+        //temp
+        String urlTest = "https://en.wikipedia.org/wiki/Comparison_of_Canon_EOS_digital_cameras";
+        Parser1 monParser = new Parser1();
+	    monParser.parseHtmlFromUrl2(urlTest);
     }
 }

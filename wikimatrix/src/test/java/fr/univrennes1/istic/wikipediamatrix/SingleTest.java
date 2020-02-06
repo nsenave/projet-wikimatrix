@@ -43,6 +43,7 @@ public class SingleTest {
 		// TODO: the HTML extractor should save CSV files into output/HTML
 		// see outputDirHtml 
 		// NICO: todo dans une classe séparée
+	    
 		// TODO: the Wikitext extractor should save CSV files into output/wikitext
 		// see outputDirWikitext
 		// NICO: (idem)
