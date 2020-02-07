@@ -1,0 +1,13 @@
+
+Fait
+- import du projet sur git
+- import des dépendances (Jsoup, CVSParser) avec maven via le pom.xml
+- urlTest mise dans BenchTest (en commentaire)
+
+Questions :
+- rendu sur git : un fork sur le git de Matthieu Acher ou git perso is ok ?
+- designs patterns ?
+
+A faire :
+...
+
