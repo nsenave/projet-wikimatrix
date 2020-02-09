@@ -29,6 +29,13 @@
       <artifactId>commons-csv</artifactId>
       <version>1.4</version>
     </dependency>
+    <!-- OpenCSV pour ecrire les fichiers csv -->
+    <!-- https://www.geeksforgeeks.org/writing-a-csv-file-in-java-using-opencsv/ -->
+    <dependency> 
+      <groupId>com.opencsv</groupId> 
+      <artifactId>opencsv</artifactId> 
+      <version>4.1</version> 
+    </dependency> 
   </dependencies>
     
   
