@@ -1,13 +1,22 @@
 
 Fait
 - import du projet sur git
-- import des dépendances (Jsoup, CVSParser) avec maven via le pom.xml
-- urlTest mise dans BenchTest (en commentaire)
-
-Questions :
-- rendu sur git : un fork sur le git de Matthieu Acher ou git perso is ok ?
-- designs patterns ?
+- import des dépendances (Jsoup, CVSParser, OpenCSV, et Log4j) avec maven via le pom.xml
+- utilisation des logger à la place des print
+- classe de test SingleTest pour la page test 
+- une interface Parser et 2 implémentations
+- classe bean Tableau
+- classe TableauCSVWriter pour écrire les csv à partir des beans Tableau
+- enlevé quelques liens qui posent problème dans inputdata/wikiurls.txt ("%" dans le lien, page supprimée...)
+- README.md mis à jour
 
 A faire :
-...
+- faire un rapport de quelques pages pour expliquer ce qu'on a fait, le design pattern et les résultats (+ une petite conclu cf. le sujet)
+- diagramme de classe du projet (notamment notre implémentation du pattern "Stratégie" avec les Parser)
+- utiliser CSVParser dans TableauCSVChecker pour tester si les CSV sont bien formatés
+- pourcentage de csv bien formés
+- compter à la main nombre de lignes, nombre de colonnes 3 voire 4 quelques pages
++ implémenter une classe dans le package checkers qui vérifie que les nombres de lignes/colonnes sont bons
+(on peut aussi tester s'il y a le bon nombre de tableaux sur la page)
+- faire quelque chose pour le problème des tableaux dans les tableaux
 
