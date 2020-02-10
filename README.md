@@ -6,7 +6,7 @@ cd wikimatrix
 mvn test
 ``` 
 
-I get a "OutOfMemory Java heap space" when I try to do all the tests, so I would recommand you to try first:
+We get a "OutOfMemory Java heap space" when we try to do all the tests, so I would recommand you to try first:
 ```
 mvn -Dtest=SingleTest test
 ```
