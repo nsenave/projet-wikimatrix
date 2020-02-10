@@ -73,7 +73,7 @@ public class Parser1 implements Parser {
         
     }
 	
-	public String[] convertStringListToArray(List<String> liste) {
+	private String[] convertStringListToArray(List<String> liste) {
 		/*
 		 * Peut-être qu'une librairie fait ça
 		 */
@@ -85,7 +85,7 @@ public class Parser1 implements Parser {
 		return res;
 	}
 	
-	public String extractTextFromNode(Element element) {
+	private String extractTextFromNode(Element element) {
 		// Initialisation de la chaine resultat
 		String res = "";
 		// On recupere le contenu des TexNodes
@@ -108,7 +108,7 @@ public class Parser1 implements Parser {
 		return res.trim();
 	}
 	
-	public String extractTextFromNode(Element element, String res) {
+	private String extractTextFromNode(Element element, String res) {
 		if(element.childNodeSize() == 0) {
 			return res;
 		}

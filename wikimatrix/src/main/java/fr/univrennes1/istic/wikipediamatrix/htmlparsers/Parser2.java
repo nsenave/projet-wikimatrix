@@ -2,7 +2,7 @@ package fr.univrennes1.istic.wikipediamatrix.htmlparsers;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.List;
 
 import java.util.logging.Logger;
@@ -61,15 +61,11 @@ public class Parser2 implements Parser {
         		Elements cellules = tr.select("td");
         		
         		// Cette fois-ci on verifie que le nombre de colonnes correspond a l'en-tete
-        		if(cellules.size() != nombreColonnes && cellules.size() != 0) {
+        		if(cellules.size() != nombreColonnes && cellules.size() != 0) { // On peut avoir parfois des lignes vides
         			logger.info("The table number " + t + " seems to be unproperly formatted.");
         			valide = false;
         			break;
-        		}
-        		else if(cellules.size() == 0) {
-        			
-        		}
-        		
+        		}        		
         		List<String> ligne = new ArrayList<>();
         		for (Element td : cellules) {
         			ligne.add(extractTextFromNode(td));
@@ -88,7 +84,7 @@ public class Parser2 implements Parser {
         
     }
 	
-	public String[] convertStringListToArray(List<String> liste) {
+	private String[] convertStringListToArray(List<String> liste) {
 		/*
 		 * Peut-être qu'une librairie fait ça
 		 */
@@ -100,7 +96,7 @@ public class Parser2 implements Parser {
 		return res;
 	}
 	
-	public String extractTextFromNode(Element element) {
+	private String extractTextFromNode(Element element) {
 		// Initialisation de la chaine resultat
 		String res = "";
 		// On recupere le contenu des TexNodes
@@ -123,7 +119,7 @@ public class Parser2 implements Parser {
 		return res.trim();
 	}
 	
-	public String extractTextFromNode(Element element, String res) {
+	private String extractTextFromNode(Element element, String res) {
 		if(element.childNodeSize() == 0) {
 			return res;
 		}
@@ -140,11 +136,11 @@ public class Parser2 implements Parser {
 		return res;
 	}
 	
-	public static boolean stringContainsItemFromList(String inputStr, String[] items) {
-		/*
-		 * https://stackoverflow.com/a/8995988
-		 */
-	    return Arrays.stream(items).parallel().anyMatch(inputStr::contains);
-	}
+//	private static boolean stringContainsItemFromList(String inputStr, String[] items) {
+//		/*
+//		 * https://stackoverflow.com/a/8995988
+//		 */
+//	    return Arrays.stream(items).parallel().anyMatch(inputStr::contains);
+//	}
 
 }

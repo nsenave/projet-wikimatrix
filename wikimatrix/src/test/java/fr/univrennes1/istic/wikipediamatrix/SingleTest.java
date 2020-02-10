@@ -20,17 +20,15 @@ public class SingleTest {
 	
 	static Logger logger = Logger.getLogger("SingleTest");
 	
-	// String urlTest = "Comparison_of_Canon_EOS_digital_cameras";
 	static String BASE_WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/";
+	// URL
+	static String urlTest = "Comparison_of_Canon_EOS_digital_cameras";
 	
 	/*
 	 * Let's try first with a single page
 	 */
 	@Test
 	public void testExtractors() throws Exception {
-		
-		// URL
-		String urlTest = "Comparison_of_Canon_EOS_digital_cameras";
 		
 		// for exporting to CSV files, we will use mkCSVFileName
 		// the *first* extracted table will be exported to a CSV file called 

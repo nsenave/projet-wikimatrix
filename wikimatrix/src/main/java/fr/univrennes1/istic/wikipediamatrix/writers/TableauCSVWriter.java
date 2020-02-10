@@ -14,8 +14,8 @@ public class TableauCSVWriter {
 
 	static Logger logger = Logger.getLogger("TableauCSVWriter");
 	
-	public String filePath;
-	public Tableau tableau;
+	private String filePath;
+	private Tableau tableau;
 	
 	public TableauCSVWriter(String filePath, Tableau tableau) {
 		this.filePath = filePath;
