@@ -5,8 +5,7 @@ Extracting Wikipedia tables into CSV files. Once the git is cloned:
 cd wikimatrix 
 mvn test
 ``` 
-
-We get a "OutOfMemory Java heap space" when we try to do all the tests, so I would recommand you to try first:
+An "OutOfMemory Java heap space" can occur when trying to do all the tests, so we would recommand you to try first:
 ```
 mvn -Dtest=SingleTest test
 ```
