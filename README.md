@@ -1,6 +1,6 @@
 # Wikipedia Matrix
 
-Extracting Wikipedia tables into CSV files (basic skeleton for testing/benchmarking solutions). Once the git is cloned:
+Extracting Wikipedia tables into CSV files. Once the git is cloned:
 ```
 cd wikimatrix 
 mvn test
